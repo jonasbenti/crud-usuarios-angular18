@@ -1,5 +1,19 @@
 # CrudUsuarios
 
+## Instalar bootstrap:
+``npm install bootstrap``
+## Inserir o import do bootstrap no arquivo ``src/styles.scss``:
+``@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';``
+## Instalar o angular material:
+``ng add @angular/material``
+OBS: nas perguntas responder:
+- The package @angular/material@18.0.4 will be installed and executed.
+Would you like to proceed? R: Yes
+- Choose a prebuilt theme name, or "custom" for a custom theme: R: Azure/Blue 
+- Set up global Angular Material typography styles? R: yes
+- Include the Angular animations module? R: Include and enable animations
+
+# Definicões default do Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
 ## Development server
