@@ -13,6 +13,14 @@ Would you like to proceed? R: Yes
 - Set up global Angular Material typography styles? R: yes
 - Include the Angular animations module? R: Include and enable animations
 
+## Após criar o Realtime Database e o App no firebase executar o seguinte comando:
+``npm install firebase``
+
+## Criar arquivo de ambientes no angular:
+``ng g environments``
+
+## Usar arquivo de exemplo (src/environments/environment.sample.ts) para configurar a conexao com o 
+
 # Definicões default do Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
