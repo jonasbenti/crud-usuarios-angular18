@@ -19,12 +19,17 @@ import { CrudComponent } from './pages/crud/crud.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+
 import { MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule} from '@angular/material/sort';
+
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { AngularFireModule } from '@angular/fire/compat';
+import { ModalViewUserComponent } from './pages/crud/modal-view-user/modal-view-user.component';
+import { ModalFormUserComponent } from './pages/crud/modal-form-user/modal-form-user.component';
 
 
 
@@ -35,7 +40,9 @@ import { AngularFireModule } from '@angular/fire/compat';
     LoginComponent,
     HomeComponent,
     MenuComponent,
-    CrudComponent
+    CrudComponent,
+    ModalViewUserComponent,
+    ModalFormUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +53,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
     MatProgressSpinnerModule,
     MatTableModule,
     MatSortModule,

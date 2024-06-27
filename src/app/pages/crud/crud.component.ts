@@ -5,8 +5,8 @@ import { MatSort } from '@angular/material/sort';
 import { User } from '../../interfaces/user';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
-// import { ModalViewUserComponent } from './modal-view-user/modal-view-user.component';
-// import { ModalFormUserComponent } from './modal-form-user/modal-form-user.component';
+import { ModalViewUserComponent } from './modal-view-user/modal-view-user.component';
+import { ModalFormUserComponent } from './modal-form-user/modal-form-user.component';
 
 @Component({
   selector: 'app-crud',
@@ -75,27 +75,27 @@ export class CrudComponent {
   }
 
   // LOGICA DO MODAL
-  // openModalViewUser(user: User) {
-  //   this.dialog.open(ModalViewUserComponent, {
-  //     width: '700px',
-  //     height: '330px',
-  //     data: user
-  //   })
-  // }
+  openModalViewUser(user: User) {
+    this.dialog.open(ModalViewUserComponent, {
+      width: '700px',
+      height: '330px',
+      data: user
+    })
+  }
 
-  // openModalAddUser() {
-  //   this.dialog.open(ModalFormUserComponent, {
-  //     width: '700px',
-  //     height: '410px'
-  //   }).afterClosed().subscribe(() => this.getListUsers() );
-  // }
+  openModalAddUser() {
+    this.dialog.open(ModalFormUserComponent, {
+      width: '700px',
+      height: '480px'
+    }).afterClosed().subscribe(() => this.getListUsers() );
+  }
 
-  // openModalEditUser(user: User) {
-  //   this.dialog.open(ModalFormUserComponent, {
-  //     width: '700px',
-  //     height: '410px',
-  //     data: user
-  //   }).afterClosed().subscribe(() => this.getListUsers() );
-  // }
+  openModalEditUser(user: User) {
+    this.dialog.open(ModalFormUserComponent, {
+      width: '700px',
+      height: '480px',
+      data: user
+    }).afterClosed().subscribe(() => this.getListUsers() );
+  }
 
 }
